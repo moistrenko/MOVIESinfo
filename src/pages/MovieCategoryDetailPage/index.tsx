@@ -3,13 +3,13 @@ import routeMain from './routes'
 
 import './style.sass'
 
-const MoveCategoryPage = () => {
+const MovieCategoryDetailPage = () => {
 	return (
 		<>
-		MoveCategoryPage
+		MovieCategoryDetailPage
 		</>
 	)
 }
 
 export {routeMain}
-export default MoveCategoryPage;
+export default MovieCategoryDetailPage;
