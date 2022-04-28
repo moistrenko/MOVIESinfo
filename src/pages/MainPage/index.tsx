@@ -1,11 +1,17 @@
 import React from 'react';
 import routeMain from "./routes";
 
+import {getMovies} from 'services/getMovies/index'
+
 import MainTitle from 'components/MainTitle'
 
 import './style.sass'
 
 const MainPage = () => {
+	console.log(getMovies());
+	
+	
+
 	return (
 		<div className="main-page">
 			<MainTitle title='MOVIESinfo' subtitle='Самый популярный портал о фильмах '/>
