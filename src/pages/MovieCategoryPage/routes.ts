@@ -1,3 +1,3 @@
-const routeCategory = () => '/category'
+const routeMain = () => '/category'
 
-export default routeCategory
+export default routeMain

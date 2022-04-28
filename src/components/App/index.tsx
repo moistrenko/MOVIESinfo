@@ -1,14 +1,17 @@
-import React from 'react';
-import AppContent from 'components/AppContent'
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import AppContent from "components/AppContent";
 
-import './style.sass';
+import "./style.sass";
 
 function App() {
-  return (
-    <div className="App">
-		<AppContent/>
-    </div>
-  );
+	return (
+		<div className='App'>
+			<BrowserRouter>
+				<AppContent />
+			</BrowserRouter>
+		</div>
+	);
 }
 
 export default App;

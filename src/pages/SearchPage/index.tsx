@@ -3,13 +3,13 @@ import routeMain from './routes'
 
 import './style.sass'
 
-const MoveCategoryPage = () => {
+const SearchPage = () => {
 	return (
 		<>
-		MoveCategoryPage
+		SearchPage
 		</>
 	)
 }
 
 export {routeMain}
-export default MoveCategoryPage;
+export default SearchPage
