@@ -1,14 +1,14 @@
 import React from 'react';
 import routeMain from "./routes";
 
-import {getMovies} from 'services/getMovies/index'
+import {getMoviesList} from 'api/movies'
 
 import MainTitle from 'components/MainTitle'
 
 import './style.sass'
 
 const MainPage = () => {
-	console.log(getMovies());
+	getMoviesList().then(response => console.log( response))
 	
 	
 
