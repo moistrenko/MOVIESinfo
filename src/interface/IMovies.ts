@@ -1,5 +1,6 @@
 export interface IMovies {
 	show: {
+		id: number;
 		genres: string[];
 		image: {
 			medium: string;
@@ -15,6 +16,6 @@ export interface IMovies {
 		rating: {
 			average: number;
 		}
-		summary: JSX.Element
+		summary?: JSX.Element
 	};
 }
