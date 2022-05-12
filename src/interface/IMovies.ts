@@ -3,9 +3,9 @@ export interface IMovies {
 		id: number;
 		genres: string[];
 		image: {
-			medium: string;
-			original: string;
-		};
+			medium?: string;
+			original?: string;
+		} | null;
 		name: string;
 		network: {
 			country: {
