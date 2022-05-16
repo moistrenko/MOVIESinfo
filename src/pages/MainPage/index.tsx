@@ -22,7 +22,9 @@ const MainPage = () => {
 	return (
 		<div className='main-page'>
 			<MainTitle title='MOVIESinfo' subtitle='Самый популярный портал о фильмах ' />
-			<MoviesList list={moviesList}/>
+			<div className='content-wrapper'>
+				<MoviesList list={moviesList.slice(0, 8)} />
+			</div>
 		</div>
 	);
 };

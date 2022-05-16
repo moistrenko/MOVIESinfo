@@ -14,7 +14,7 @@ const MoviesList: React.FC<IMoviesListParams> = ({ list }) => {
 	return (
 		<div className='list-wrapper'>
 			<ul className='movies-list'>
-				{list.slice(0, 8).map((movies: IMovies) => (
+				{list.map((movies: IMovies) => (
 					<MovieItem key={movies.show.id} item={movies} />
 				))}
 			</ul>
