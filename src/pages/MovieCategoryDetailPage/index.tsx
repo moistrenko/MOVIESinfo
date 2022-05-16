@@ -6,7 +6,8 @@ import './style.sass'
 const MovieCategoryDetailPage = () => {
 	return (
 		<>
-		MovieCategoryDetailPage
+			<div className="ca">asdasdasd</div>
+			MovieCategoryDetailPage
 		</>
 	)
 }

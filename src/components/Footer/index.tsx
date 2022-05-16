@@ -13,7 +13,6 @@ function Footer() {
 				<NavLink to={routerMainPage()}>
 					<Logo />
 				</NavLink>
-				<h2 className='footer__title'>Дипломный проект</h2>
 				<div className='author'>
 					<div className='author__title'>Made by</div>
 					<div className='author__name'>Анатолий Мойстренко</div>

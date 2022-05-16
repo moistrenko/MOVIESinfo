@@ -1,13 +1,28 @@
-import React from 'react';
+import React from "react";
 
-import './style.sass'
+import { IMovies } from "interface/IMovies";
+import { IItemMovies } from "interface/IItemMovies";
 
-const MoviesList = () => {
-	return (
-		<div className="movies-list">
-			
-		</div>
-	)
+import MovieItem from "./components/MovieItem";
+
+import "./style.sass";
+
+interface IMoviesListParams {
+	// list : [{show: IItemMovies[]}];
+	list: IMovies[];
 }
 
-export default MoviesList
+const MoviesList: React.FC<IMoviesListParams> = ({ list }) => {
+	return (
+		<div className='list-wrapper'>
+			<ul className='movies-list'>
+				{list.map((movies) => {
+					const id = movies.show.id
+					return <MovieItem key={id} item={movies.show} />
+})}
+			</ul>
+		</div>
+	);
+};
+
+export default MoviesList;
